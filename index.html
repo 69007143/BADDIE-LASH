@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BADDIE LASH</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff8fb;
+    color: #21151b;
+}
+
+header {
+    background: #171217;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #f3a9c8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.hero {
+    background: #f7cddd;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #c83e78;
+}
+
+.hero p {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.hero img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    background: #171217;
+    color: white;
+    padding: 14px 28px;
+    margin-top: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.category {
+    background: #f8dce8;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product {
+    background: white;
+    border: 1px solid #f0dce5;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product h3 {
+    margin-top: 15px;
+}
+
+.product p {
+    color: #777;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.price {
+    color: #c83e78;
+    font-weight: bold;
+}
+
+.product button {
+    background: #171217;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.banner {
+    background: #171217;
+    color: #f7cddd;
+    text-align: center;
+    padding: 50px;
+}
+
+.banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+footer {
+    background: #f7cddd;
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BADDIE <span>LASH</span></div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#styles">LASH STYLES</a>
+        <a href="#shop">SHOP</a>
+        <a href="#about">ABOUT</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<div class="hero" id="home">
+
+    <div class="hero-text">
+        <h1>Be Bold.<br>
+        <span>Be a Baddie.</span></h1>
+
+        <p>
+            Your lashes, your rules.
+            Discover gorgeous lashes made for
+            every mood and every glam look.
+        </p>
+
+        <a href="#shop" class="button">SHOP NOW</a>
+    </div>
+
+    <img
+    src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=900&q=80"
+    alt="Beauty makeup">
+</div>
+
+<!-- LASH STYLES -->
+<section id="styles">
+
+    <h2 class="section-title">Find Your Lash Mood</h2>
+
+    <div class="categories">
+        <div class="category">WISPY</div>
+        <div class="category">ANIME</div>
+        <div class="category">WET SET</div>
+        <div class="category">VOLUME</div>
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section id="shop">
+
+    <h2 class="section-title">Best Sellers</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80"
+            alt="Wispy lashes">
+
+            <h3>WISPY BADDIE</h3>
+            <p>Soft and fluffy lashes for everyday glam.</p>
+            <div class="price">$12.00</div>
+            <button onclick="addToCart()">ADD TO BAG</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80"
+            alt="Beauty lashes">
+
+            <h3>DRAMA QUEEN</h3>
+            <p>Extra volume for a dramatic look.</p>
+            <div class="price">$15.00</div>
+            <button onclick="addToCart()">ADD TO BAG</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80"
+            alt="Glam lashes">
+
+            <h3>THE LASH KIT</h3>
+            <p>Lash bond, seal and applicator included.</p>
+            <div class="price">$24.00</div>
+            <button onclick="addToCart()">ADD TO BAG</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BRAND BANNER -->
+<div class="banner">
+    <h2>Good Lashes. Bad Intentions.</h2>
+    <p>BE CONFIDENT. BE BEAUTIFUL. BE A BADDIE.</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="section-title">About BADDIE LASH</h2>
+
+    <p style="text-align:center; line-height:2;">
+        BADDIE LASH is made for girls who love beauty,
+        confidence and bold looks. From natural wispy lashes
+        to dramatic volume, find your perfect lash style.
+    </p>
+
+</section>
+
+<footer>
+    © 2026 BADDIE LASH STUDIO | ALL RIGHTS RESERVED
+</footer>
+
+<script>
+let cart = 0;
+
+function addToCart() {
+    cart++;
+    alert("Added to bag! Total items: " + cart);
+}
+</script>
+
+</body>
+</html>
